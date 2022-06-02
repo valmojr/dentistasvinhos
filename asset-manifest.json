@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/dentistasvinhos/static/css/main.a7445eaf.css",
+    "main.css": "/dentistasvinhos/static/css/main.065ee5a5.css",
     "main.js": "/dentistasvinhos/static/js/main.7786f336.js",
     "static/js/787.b4b5f9c3.chunk.js": "/dentistasvinhos/static/js/787.b4b5f9c3.chunk.js",
     "static/media/main.png": "/dentistasvinhos/static/media/main.60dfc170d494fbf4c998.png",
-    "static/media/vale-dos-vinhedos.jpg": "/dentistasvinhos/static/media/vale-dos-vinhedos.fe2ba6a3f3aabcc4a989.jpg",
+    "static/media/viniexterna.png": "/dentistasvinhos/static/media/viniexterna.9020c36f024c5fd05f98.png",
     "static/media/reginatto.png": "/dentistasvinhos/static/media/reginatto.24dbec9eca0534d5a7d4.png",
     "static/media/alana.png": "/dentistasvinhos/static/media/alana.9c4b8133a3b11f686597.png",
     "static/media/pedro.png": "/dentistasvinhos/static/media/pedro.0f945316795e78ab0bd3.png",
@@ -13,12 +13,12 @@
     "static/media/odontoest.jpg": "/dentistasvinhos/static/media/odontoest.623bff82837cbb8887cf.jpg",
     "static/media/voss.png": "/dentistasvinhos/static/media/voss.d9c2079e5500f20896fb.png",
     "index.html": "/dentistasvinhos/index.html",
-    "main.a7445eaf.css.map": "/dentistasvinhos/static/css/main.a7445eaf.css.map",
+    "main.065ee5a5.css.map": "/dentistasvinhos/static/css/main.065ee5a5.css.map",
     "main.7786f336.js.map": "/dentistasvinhos/static/js/main.7786f336.js.map",
     "787.b4b5f9c3.chunk.js.map": "/dentistasvinhos/static/js/787.b4b5f9c3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a7445eaf.css",
+    "static/css/main.065ee5a5.css",
     "static/js/main.7786f336.js"
   ]
 }
