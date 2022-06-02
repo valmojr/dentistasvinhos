@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/casadodentistavinhedos/static/css/main.797aead7.css",
+    "main.js": "/casadodentistavinhedos/static/js/main.fde1f3a9.js",
+    "static/js/787.b4b5f9c3.chunk.js": "/casadodentistavinhedos/static/js/787.b4b5f9c3.chunk.js",
+    "static/media/main.png": "/casadodentistavinhedos/static/media/main.60dfc170d494fbf4c998.png",
+    "static/media/vale-dos-vinhedos.jpg": "/casadodentistavinhedos/static/media/vale-dos-vinhedos.fe2ba6a3f3aabcc4a989.jpg",
+    "static/media/placeholder.jpg": "/casadodentistavinhedos/static/media/placeholder.48007e9c20f1acc951bc.jpg",
+    "index.html": "/casadodentistavinhedos/index.html",
+    "main.797aead7.css.map": "/casadodentistavinhedos/static/css/main.797aead7.css.map",
+    "main.fde1f3a9.js.map": "/casadodentistavinhedos/static/js/main.fde1f3a9.js.map",
+    "787.b4b5f9c3.chunk.js.map": "/casadodentistavinhedos/static/js/787.b4b5f9c3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.797aead7.css",
+    "static/js/main.fde1f3a9.js"
+  ]
+}
