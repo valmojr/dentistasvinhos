@@ -5,7 +5,6 @@ import reginatto from './images/reginatto.png';
 import pedro from './images/pedro.png';
 import alana from './images/alana.png';
 import odontoest from './images/odontoest.jpg';
-import serragaucha from './images/serragaucha.jfif';
 
 function App() {
   return (
