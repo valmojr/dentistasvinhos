@@ -1,6 +1,6 @@
 import './App.css';
 import chaim from './images/chaim.png';
-import voss from './images/voss.png';
+import hermann from './images/hermann.png';
 import ubaldo from './images/ubaldo.png'
 import pedro from './images/pedro.png';
 import alana from './images/alana.png';
@@ -18,13 +18,56 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showSchedule: false
+      showSchedule: false,
+      showAlana: false,
+      showPedroAlexandre: false,
+      showUbaldo: false,
+      showPizzolato: false,
+      showLuisFelipe: false,
+      showChain: false,
+      showHermann: false
     }
   }
 
   toggleSchedule = () => {
     this.setState({
       showSchedule: !this.state.showSchedule
+    });
+  }
+  // PROFESSORES
+  toggleAlana = () => {
+    this.setState({
+      showAlana: !this.state.showAlana
+    });
+  }
+  togglePedroAlexandre = () => {
+    this.setState({
+      showPedroAlexandre: !this.state.showPedroAlexandre
+    });
+  }
+  toggleUbaldo = () => {
+    this.setState({
+      showUbaldo: !this.state.showUbaldo
+    });
+  }
+  togglePizzolato = () => {
+    this.setState({
+      showPizzolato: !this.state.showPizzolato
+    });
+  }
+  toggleLuisFelipe = () => {
+    this.setState({
+      showLuisFelipe: !this.state.showLuisFelipe
+    });
+  }
+  toggleChain = () => {
+    this.setState({
+      showChain: !this.state.showChain
+    });
+  }
+  toggleHermann = () => {
+    this.setState({
+      showHermann: !this.state.showHermann
     });
   }
 
@@ -53,22 +96,34 @@ class App extends Component {
         <p>Restaurações de dentes anteriores e posteriores e sistemas adesivos</p>
       </div>
       <div className="thumbnail">
-        <img src={voss} alt="" className='faces'/>
-        <h1 className="stats">Fábio Hermann</h1>
-        <h4>Professor de Dentística (UFRGS)</h4>
-        <p>Laminados cerâmicos e lentes de contato</p>
-      </div>
-      <div className="thumbnail">
         <img src={ubaldo} alt="" className='faces'/>
         <h1 className="stats">Leonardo Ubaldo</h1>
         <h4>Professor de Dentística</h4>
         <p>Resinas anteriores e posteriores</p>
       </div>
-      <div className="thumbnail_main">
-        <img src={chaim} alt="" className='faces_main'/>
+      <div className="thumbnail">
+        <img src={pizzolotto} alt="" className='faces'/>
+        <h1 className="stats">Lucas Pizzolato</h1>
+        <h4>Professor de Dentística</h4>
+        <p>Resinas indiretas posteriores</p>
+      </div>
+      <div className="thumbnail">
+        <img src={luisfilipe} alt="" className='faces'/>
+        <h1 className="stats">Luis Antonio Felipe</h1>
+        <h4>Professor de Dentística</h4>
+        <p>Reabilitação estética e oclusal com resinas</p>
+      </div>
+      <div className="thumbnail">
+        <img src={chaim} alt="" className='faces'/>
         <h1 className="stats">Marcelo Chain</h1>
         <h4>Prof. Ph.D em Biomateriais</h4>
         <p>Desenho do Sorriso</p>
+      </div>
+      <div className="thumbnail">
+        <img src={hermann} alt="" className='faces'/>
+        <h1 className="stats">Fábio Hermann</h1>
+        <h4>Professor de Dentística (UFRGS)</h4>
+        <p>Laminados cerâmicos e lentes de contato</p>
       </div>
     </div>
     <section className="banner">
@@ -93,59 +148,178 @@ class App extends Component {
           <div className='schedule-mainframe'>
             <div className='schedule-dayframe'>
               <h1>Sexta (26/Ago)</h1>
-              <div className='schedule-card'>
+              <div className='schedule-card' onClick={this.toggleAlana}>
                 <div className='insidebox'>
                 <div className='schedule-tag'><p>08:30</p></div>
                 <img src={alana} alt="" className='faces'/>
                 <span>Harmonização Ortofacial</span>
                 </div>
-                <div className='schedule-description'>
-                  <span>Teste</span>
+                {this.state.showAlana && <div className='schedule-description'>
+                  <div className='schedule-decription-curriculum'>
+                    <h3>Prof. Alana Pereira</h3>
+                    <ul>
+                      <li>Mestre e Doutora em Dentística (UFSC)</li>
+                      <li>Professora de Especialização em Dentística e Prótese (UNISOCIESC)</li>
+                      <li>Pós-graduação em Estética Dental (UNIAVAN)</li>
+                      <li>Pós-graduação em Dentística (ABO)</li>
+                    </ul>
+                  </div>
+                  <div className='schedule-description-event'>
+                    <p>Irá ministrar palestra acerca de dentística, com ênfase em harmonização ortofacial.</p>
+                  </div>
+                </div>}
+              </div>
+              <div className='schedule-card' id='break'>
+                <div className='insidebox'>
+                <div className='schedule-tag'><p>10:30</p></div>
+                <span>Coffee Break</span>
                 </div>
               </div>
-              <div className='schedule-card'>
+              <div className='schedule-card' onClick={this.togglePedroAlexandre}>
                 <div className='insidebox'>
                 <div className='schedule-tag'><p>11:00</p></div>
                 <img src={pedro} alt="" className='faces'/>
                 <span>Restaurações de Dentes Posteriores e anteriores com sistema adesivo</span>
                 </div>
+                {this.state.showPedroAlexandre && <div className='schedule-description'>
+                  <div className='schedule-decription-curriculum'>
+                    <h3>Prof. Alana Pereira</h3>
+                    <ul>
+                      <li>Mestre e Doutora em Dentística (UFSC)</li>
+                      <li>Professora de Especialização em Dentística e Prótese (UNISOCIESC)</li>
+                      <li>Pós-graduação em Estética Dental (UNIAVAN)</li>
+                      <li>Pós-graduação em Dentística (ABO)</li>
+                    </ul>
+                  </div>
+                  <div className='schedule-description-event'>
+                    <p>Irá ministrar palestra acerca de dentística, com ênfase em harmonização ortofacial.</p>
+                  </div>
+                </div>}
               </div>
-              <div className='schedule-card'>
+              <div className='schedule-card' id='break'>
+                <div className='insidebox'>
+                <div className='schedule-tag'><p>13:45</p></div>
+                <span>Almoço</span>
+                </div>
+              </div>
+              <div className='schedule-card' onClick={this.toggleUbaldo}>
                 <div className='insidebox'>
                 <div className='schedule-tag'><p>14:30</p></div>
                 <img src={ubaldo} alt="" className='faces'/>
                 <span>Resinas anteriores e posteriores</span>
                 </div>
+                {this.state.showUbaldo && <div className='schedule-description'>
+                  <div className='schedule-decription-curriculum'>
+                    <h3>Prof. Alana Pereira</h3>
+                    <ul>
+                      <li>Mestre e Doutora em Dentística (UFSC)</li>
+                      <li>Professora de Especialização em Dentística e Prótese (UNISOCIESC)</li>
+                      <li>Pós-graduação em Estética Dental (UNIAVAN)</li>
+                      <li>Pós-graduação em Dentística (ABO)</li>
+                    </ul>
+                  </div>
+                  <div className='schedule-description-event'>
+                    <p>Irá ministrar palestra acerca de dentística, com ênfase em harmonização ortofacial.</p>
+                  </div>
+                </div>}
               </div>
-              <div className='schedule-card'>
+              <div className='schedule-card' onClick={this.togglePizzolato}>
                 <div className='insidebox'>
                 <div className='schedule-tag'><p>17:30</p></div>
                 <img src={pizzolotto} alt="" className='faces'/>
                 <span>Restaurações indiretas com resina composta</span>
                 </div>
+                {this.state.showPizzolato && <div className='schedule-description'>
+                  <div className='schedule-decription-curriculum'>
+                    <h3>Prof. Alana Pereira</h3>
+                    <ul>
+                      <li>Mestre e Doutora em Dentística (UFSC)</li>
+                      <li>Professora de Especialização em Dentística e Prótese (UNISOCIESC)</li>
+                      <li>Pós-graduação em Estética Dental (UNIAVAN)</li>
+                      <li>Pós-graduação em Dentística (ABO)</li>
+                    </ul>
+                  </div>
+                  <div className='schedule-description-event'>
+                    <p>Irá ministrar palestra acerca de dentística, com ênfase em harmonização ortofacial.</p>
+                  </div>
+                </div>}
               </div>
             </div>
             <div className='schedule-dayframe'>
             <h1>Sábado (27/Ago)</h1>
-            <div className='schedule-card'>
+            <div className='schedule-card' onClick={this.toggleLuisFelipe}>
               <div className='insidebox'>
                 <div className='schedule-tag'><p>08:00</p></div>
                 <img src={luisfilipe} alt="" className='faces'/>
                 <span>Reabilitação estética e oclusal com resinas</span>
                 </div>
+                {this.state.showLuisFelipe && <div className='schedule-description'>
+                  <div className='schedule-decription-curriculum'>
+                    <h3>Prof. Alana Pereira</h3>
+                    <ul>
+                      <li>Mestre e Doutora em Dentística (UFSC)</li>
+                      <li>Professora de Especialização em Dentística e Prótese (UNISOCIESC)</li>
+                      <li>Pós-graduação em Estética Dental (UNIAVAN)</li>
+                      <li>Pós-graduação em Dentística (ABO)</li>
+                    </ul>
+                  </div>
+                  <div className='schedule-description-event'>
+                    <p>Irá ministrar palestra acerca de dentística, com ênfase em harmonização ortofacial.</p>
+                  </div>
+                </div>}
               </div>
-            <div className='schedule-card'>
-              <div className='insidebox'>
-                <div className='schedule-tag'><p>11:30</p></div>
-                <img src={voss} alt="" className='faces'/>
-                <span>Facetas laminadas - Resinas composta e cerâmica</span>
+              <div className='schedule-card' id='break'>
+                <div className='insidebox'>
+                <div className='schedule-tag'><p>11:00</p></div>
+                <span>Coffee Break</span>
                 </div>
               </div>
-            <div className='schedule-card'>
+            <div className='schedule-card' onClick={this.toggleHermann}>
+              <div className='insidebox'>
+                <div className='schedule-tag'><p>11:30</p></div>
+                <img src={hermann} alt="" className='faces'/>
+                <span>Facetas laminadas - Resinas composta e cerâmica</span>
+                </div>
+                {this.state.showHermann && <div className='schedule-description'>
+                  <div className='schedule-decription-curriculum'>
+                    <h3>Prof. Alana Pereira</h3>
+                    <ul>
+                      <li>Mestre e Doutora em Dentística (UFSC)</li>
+                      <li>Professora de Especialização em Dentística e Prótese (UNISOCIESC)</li>
+                      <li>Pós-graduação em Estética Dental (UNIAVAN)</li>
+                      <li>Pós-graduação em Dentística (ABO)</li>
+                    </ul>
+                  </div>
+                  <div className='schedule-description-event'>
+                    <p>Irá ministrar palestra acerca de dentística, com ênfase em harmonização ortofacial.</p>
+                  </div>
+                </div>}
+              </div>
+            <div className='schedule-card' onClick={this.toggleChain}>
               <div className='insidebox'>
                 <div className='schedule-tag'><p>14:00</p></div>
                 <img src={chaim} alt="" className='faces'/>
                 <span>Pinos Radiculares</span>
+                </div>
+                {this.state.showChain && <div className='schedule-description'>
+                  <div className='schedule-decription-curriculum'>
+                    <h3>Prof. Alana Pereira</h3>
+                    <ul>
+                      <li>Mestre e Doutora em Dentística (UFSC)</li>
+                      <li>Professora de Especialização em Dentística e Prótese (UNISOCIESC)</li>
+                      <li>Pós-graduação em Estética Dental (UNIAVAN)</li>
+                      <li>Pós-graduação em Dentística (ABO)</li>
+                    </ul>
+                  </div>
+                  <div className='schedule-description-event'>
+                    <p>Irá ministrar palestra acerca de dentística, com ênfase em harmonização ortofacial.</p>
+                  </div>
+                </div>}
+              </div>
+              <div className='schedule-card' id='break'>
+                <div className='insidebox'>
+                <div className='schedule-tag'><p>17:00</p></div>
+                <span>Encerramento</span>
                 </div>
               </div>
             </div>
