@@ -1,10 +1,12 @@
 import './App.css';
 import chaim from './images/chaim.png';
 import voss from './images/voss.png';
-import reginatto from './images/reginatto.png';
+import ubaldo from './images/ubaldo.png'
 import pedro from './images/pedro.png';
 import alana from './images/alana.png';
 import odontoest from './images/odontoest.jpg';
+import pizzolotto from './images/pizzolotto.png'
+import luisfilipe from './images/luisfilipe.png'
 import FGM from './images/fgm.png';
 import SDI from './images/sdi.jpg';
 import VOCO from './images/Voco.png';
@@ -53,14 +55,14 @@ class App extends Component {
       <div className="thumbnail">
         <img src={voss} alt="" className='faces'/>
         <h1 className="stats">Fábio Hermann</h1>
-        <h4>Professor de Dentística da UFRGS</h4>
+        <h4>Professor de Dentística (UFRGS)</h4>
         <p>Laminados cerâmicos e lentes de contato</p>
       </div>
       <div className="thumbnail">
-        <img src={reginatto} alt="" className='faces'/>
-        <h1 className="stats">Orlando Reginatto</h1>
+        <img src={ubaldo} alt="" className='faces'/>
+        <h1 className="stats">Leonardo Ubaldo</h1>
         <h4>Professor de Dentística</h4>
-        <p>Integração Orto estética</p>
+        <p>Resinas anteriores e posteriores</p>
       </div>
       <div className="thumbnail_main">
         <img src={chaim} alt="" className='faces_main'/>
@@ -86,8 +88,69 @@ class App extends Component {
       </article>
     </footer>
     <div className="schedule-bigframe">
-        <button className='schedulebutton' onClick={this.toggleSchedule}>{this.state.showSchedule ? 'Esconder Agenda' : 'Mostrar Agenda'}</button>
-        {this.state.showSchedule && (<div className="schedule-mainframe"><h1>TESTE</h1></div>)}
+        {/* <button className='schedulebutton' onClick={this.toggleSchedule}>{this.state.showSchedule ? 'Esconder Agenda' : 'Mostrar Agenda'}</button>
+        {this.state.showSchedule && ( */}
+          <div className='schedule-mainframe'>
+            <div className='schedule-dayframe'>
+              <h1>Sexta (26/Ago)</h1>
+              <div className='schedule-card'>
+                <div className='insidebox'>
+                <div className='schedule-tag'><p>08:30</p></div>
+                <img src={alana} alt="" className='faces'/>
+                <span>Harmonização Ortofacial</span>
+                </div>
+                <div className='schedule-description'>
+                  <span>Teste</span>
+                </div>
+              </div>
+              <div className='schedule-card'>
+                <div className='insidebox'>
+                <div className='schedule-tag'><p>11:00</p></div>
+                <img src={pedro} alt="" className='faces'/>
+                <span>Restaurações de Dentes Posteriores e anteriores com sistema adesivo</span>
+                </div>
+              </div>
+              <div className='schedule-card'>
+                <div className='insidebox'>
+                <div className='schedule-tag'><p>14:30</p></div>
+                <img src={ubaldo} alt="" className='faces'/>
+                <span>Resinas anteriores e posteriores</span>
+                </div>
+              </div>
+              <div className='schedule-card'>
+                <div className='insidebox'>
+                <div className='schedule-tag'><p>17:30</p></div>
+                <img src={pizzolotto} alt="" className='faces'/>
+                <span>Restaurações indiretas com resina composta</span>
+                </div>
+              </div>
+            </div>
+            <div className='schedule-dayframe'>
+            <h1>Sábado (27/Ago)</h1>
+            <div className='schedule-card'>
+              <div className='insidebox'>
+                <div className='schedule-tag'><p>08:00</p></div>
+                <img src={luisfilipe} alt="" className='faces'/>
+                <span>Reabilitação estética e oclusal com resinas</span>
+                </div>
+              </div>
+            <div className='schedule-card'>
+              <div className='insidebox'>
+                <div className='schedule-tag'><p>11:30</p></div>
+                <img src={voss} alt="" className='faces'/>
+                <span>Facetas laminadas - Resinas composta e cerâmica</span>
+                </div>
+              </div>
+            <div className='schedule-card'>
+              <div className='insidebox'>
+                <div className='schedule-tag'><p>14:00</p></div>
+                <img src={chaim} alt="" className='faces'/>
+                <span>Pinos Radiculares</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        {/*) } */}
     </div>
     <div className="partners">
        <img src={FGM} alt="" className="partner-logo"/>
@@ -100,9 +163,9 @@ class App extends Component {
       <h2 className="hero_header">Valor do Investimento:</h2>
       <h2 className="hero_header">3x R$325,00</h2>
       <p className="hero_header">NÃO PERCA!</p>
-      <a href='https://docs.google.com/forms/d/e/1FAIpQLSc9WgJ9MtyctbAq3xRdBCxAx3NjhRUGA3Bcqa3o8mvvsPcVvg/viewform?usp=sf_link' target="_blank"><div className="button">INSCREVER-SE</div></a>
+      <a href='https://docs.google.com/forms/d/e/1FAIpQLSc9WgJ9MtyctbAq3xRdBCxAx3NjhRUGA3Bcqa3o8mvvsPcVvg/viewform?usp=sf_link' target="_blank" rel='noreferrer'><div className="button">INSCREVER-SE</div></a>
     </section>
-    <div className="copyright">&copy;2022- <strong>Feito por <a href='https://github.com/valmojr' target="_blank">Valmo Trindade</a></strong></div>
+    <div className="copyright">&copy;2022- <strong>Feito por <a href='https://github.com/valmojr' target="_blank" rel='noreferrer'>Valmo Trindade</a></strong></div>
   </div>
   );
   }
