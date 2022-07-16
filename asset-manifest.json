@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dentistasvinhos/static/css/main.abd34896.css",
-    "main.js": "/dentistasvinhos/static/js/main.9cd44943.js",
+    "main.css": "/dentistasvinhos/static/css/main.879a547a.css",
+    "main.js": "/dentistasvinhos/static/js/main.9aa6fce0.js",
     "static/js/787.b4b5f9c3.chunk.js": "/dentistasvinhos/static/js/787.b4b5f9c3.chunk.js",
     "static/media/viniexterna.png": "/dentistasvinhos/static/media/viniexterna.9020c36f024c5fd05f98.png",
     "static/media/alana.png": "/dentistasvinhos/static/media/alana.9c4b8133a3b11f686597.png",
@@ -18,12 +18,12 @@
     "static/media/main.png": "/dentistasvinhos/static/media/main.b6f9cb17b6e8d07b9ea3.png",
     "static/media/sdi.jpg": "/dentistasvinhos/static/media/sdi.35c8657cf68fd578d8d8.jpg",
     "index.html": "/dentistasvinhos/index.html",
-    "main.abd34896.css.map": "/dentistasvinhos/static/css/main.abd34896.css.map",
-    "main.9cd44943.js.map": "/dentistasvinhos/static/js/main.9cd44943.js.map",
+    "main.879a547a.css.map": "/dentistasvinhos/static/css/main.879a547a.css.map",
+    "main.9aa6fce0.js.map": "/dentistasvinhos/static/js/main.9aa6fce0.js.map",
     "787.b4b5f9c3.chunk.js.map": "/dentistasvinhos/static/js/787.b4b5f9c3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.abd34896.css",
-    "static/js/main.9cd44943.js"
+    "static/css/main.879a547a.css",
+    "static/js/main.9aa6fce0.js"
   ]
 }
