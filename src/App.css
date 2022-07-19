@@ -204,7 +204,7 @@ footer .footer_column p {
 	object-fit: cover;
 	width: 100%;
 	height: auto;
-	max-width: 400px;
+	max-width: 300px;
 	max-height: 400px;
 }
 .faces {
@@ -258,6 +258,7 @@ footer .footer_column p {
 	justify-content: center;
 	width: 100%;
 	height: fit-content;
+	margin-bottom: 10px;
 }
 .schedule-dayframe {
 	margin: 10px;
@@ -327,25 +328,24 @@ footer .footer_column p {
 	font-size: 20px;
     text-align: center;
 }
-.schedule-description {
-	margin-top: 93px;
-	display: flex;
-	position: absolute;
-	height: 0px;
-	font-size: 0px;
-	color: rgba(245, 245, 245, 0);
+#break .schedule-tag {
+	background-color: #2D9AB7;
 }
-.schedule-card .schedule-description {
-	transition: all 0.6s ease-out;
+#break .insidebox {
+	cursor:default;
 }
 .schedule-card .schedule-description .schedule-description-event {
 	text-align: justify;
 	margin-right: 20px;
 }
-.schedule-card:hover .schedule-description {
-	transition: all 0.6s ease-in;
+.schedule-card .schedule-description {
+	width: 480px;
+	margin-left: 5px;
+	margin-top: 93px;
+	display: flex;
+	position: absolute;
 	padding: 5px 5px;
-	height: 235px;
+	height: 160px;
 	font-size: medium;
 	background-color: #FFF;
 	color: #717070;
@@ -382,6 +382,7 @@ footer .footer_column p {
     color: #6164B2;
     transition: all 0.2s ease-in;
 	justify-content: left;
+	cursor: pointer;
 }
 .partners {
 	margin-top: -10px;
@@ -473,68 +474,271 @@ div img {
 }
 /* Mobile */
 @media (max-width: 320px) {
-.text_column {
-	width: 100%;
-	text-align: justify;
-	padding-top: 0px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 0px;
-}
-.thumbnail {
-	width: 100%;
-}
-.footer_column {
-	width: 100%;
-	margin-top: 0px;
-}
-.parallax {
-	text-align: center;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	padding-top: 40%;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 0px;
-	width: 100%;
-	font-size: 18px;
-}
-.parallax_description {
-	padding-top: 0px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 0px;
-	width: 90%;
-	margin-top: 25px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 12px;
-	float: none;
-	text-align: center;
-}
-.banner {
-	background-color: #2D9AB7;
-	background-image: none;
-}
-.tagline {
-	margin-top: 20px;
-	line-height: 22px;
-}
-.hero_header {
-	padding-left: 10px;
-	padding-right: 10px;
-	line-height: 22px;
-	text-align: center;
-}
-.hero_header h1{
-	font-size: 12px;
-}
-.hero_header h2{
-	font-size: 10px;
-}
-
+	.partners {
+		display:grid;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.partner-logo {
+		margin-bottom: 20px;
+	}
+	.container {
+		height: 100px;
+	}
+	.hero{
+		height: 0px;
+		background-size: 440px;
+		background-position: center;
+	}
+	#title{
+		height: 100px;
+		margin-top: -100px;
+	}
+	.hero_header h1{
+		margin-top: -10px;
+		font-size: 32px;
+	}
+	.hero_header h2{
+		margin-top: -20px;
+		font-size: 14px;
+	}
+	header nav ul {
+		padding: 0px;
+		float: none;
+	}
+	nav ul li {
+		margin-top: 0px;
+		margin-right: 0px;
+		margin-bottom: 0px;
+		margin-left: 0px;
+		width: 100%;
+		text-align: center;
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+	.text_column {
+		width: 100%;
+		text-align: left;
+		padding-top: 0px;
+		padding-right: 0px;
+		padding-bottom: 0px;
+		padding-left: 0px;
+	}
+	.thumbnail {
+		width: 100%;
+	}
+	.footer_column {
+		width: 100%;
+		margin-top: 0px;
+	}
+	.parallax {
+		text-align: center;
+		margin-top: 0px;
+		margin-right: 0px;
+		margin-bottom: 0px;
+		margin-left: 0px;
+		padding-top: 40%;
+		padding-right: 0px;
+		padding-bottom: 0px;
+		padding-left: 0px;
+		width: 100%;
+		font-size: 18px;
+	}
+	.parallax_description {
+		padding-top: 0px;
+		padding-right: 0px;
+		padding-bottom: 0px;
+		padding-left: 0px;
+		margin-top: 30%;
+		margin-right: 0px;
+		margin-bottom: 0px;
+		margin-left: 0px;
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	.thumbnail {
+		width: 50%;
+	}
+	.cards {
+		width: 260px;
+	}
+	.parallax {
+		margin-top: 0px;
+		margin-right: 0px;
+		margin-bottom: 0px;
+		margin-left: 0px;
+		padding-right: 0px;
+		padding-bottom: 0px;
+		padding-left: 0px;
+		padding-top: 20%;
+	}
+	.parallax_description {
+		margin-top: 0px;
+		margin-right: 0px;
+		margin-bottom: 0px;
+		margin-left: 0px;
+		width: 100%;
+		padding-top: 30px;
+	}
+	.banner {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.footer_column {
+		width: 100%;
+	}
+	.copyright {
+		font-size: 10px;
+	}
+	.schedule-bigframe {
+		background-color: #FFF;
+		margin-top: -5px;
+		width: 100%;
+		min-height: 100px;
+	}
+	.schedulebutton {
+		display:flexbox;
+		margin-left: calc(50% - 150px);
+		width: 300px;
+		height: 60px;
+		background-color: #464646;
+		color: #FFF;
+		border: 0;
+		border-radius: 10px;
+		font-size: 18px;
+		font-family: 'Kdam Thmor Pro';
+	}
+	.schedulebutton:hover {
+		transition: 0.6s;
+		background-color: #6e6e6e;
+		font-size: 24px;
+	}
+	.schedule-mainframe {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		width: 100%;
+		height: fit-content;
+	}
+	.schedule-dayframe {
+		margin: 5px;
+		min-width: 200px;
+		padding-right:20px;
+		padding-left:20px;
+		padding: 20px 30px;
+		border: solid 1px #ddd;
+		background-color: #f5f5f5;
+		-webkit-transition: all 0.7s cubic-bezier(0.11, 0.6, 0.24, 0.89);
+		transition: all 0.7s cubic-bezier(0.11, 0.6, 0.24, 0.89);
+	}
+	.schedule-dayframe:hover {
+		box-shadow: 0 6px 20px rgba(0,0,0,.07);
+		border: solid 1px rgba(100,40,145,.97);
+	}
+	.schedule-dayframe h1 {
+		margin-bottom:10px;
+		font-weight: bold;
+		font-size: 24px;
+		font-family: 'Roboto';
+		color: #6164B2;
+		text-align: center;
+	}
+	.schedule-card{
+		position: relative;
+		display: flex;
+		flex-flow: row wrap;
+		margin-bottom: 0.7em;
+	}
+	.schedule-card span {
+		font-size: large;
+	}
+	.schedule-card .faces {
+		height: 70px;
+		width: 70px;
+		margin-right: 15px;
+	}
+	.schedule-card:hover .insidebox {
+		transform: scale(1.033);
+		/* box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1); */
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	}
+	.schedule-card:after {
+		height: 2px;
+		width: 22px;
+		background: #ddd;
+		content: '';
+		position: absolute;
+		top: 45px;
+		left: -22px;
+		transition: all 0.3s ease-in;
+		margin-left: -10px;
+	}
+	.schedule-card:hover:after {
+		background: #8a56d1;
+		width: 25px;
+		height: 5px;
+	}
+	.schedule-tag{
+		color:#fff;
+		background-color: #6164b2;
+		padding:0px 10px;
+		margin-right: 15px;
+		min-width: 80px;
+		font-family: 'Roboto';
+		font-size: 20px;
+		text-align: center;
+	}
+	.schedule-description {
+		margin-top: 93px;
+		display: flex;
+		position: absolute;
+		height: 0px;
+		font-size: 0px;
+		color: rgba(245, 245, 245, 0);
+	}
+	.schedule-card .schedule-description .schedule-description-event {
+		text-align: justify;
+		margin-right: 20px;
+	}
+	.schedule-card .schedule-description {
+		display: block;
+		margin-top: 120px;
+		width: 280px;
+		padding: 5px 5px;
+		height: 250px;
+	}
+	.schedule-card .schedule-description .schedule-decription-curriculum {
+		max-width: 100%;
+		font-size: 12px;
+		font-weight: 500;
+	}
+	.schedule-card .schedule-description h3 {
+		margin-left: 10px;
+	}
+	.schedule-card .schedule-description .schedule-decription-curriculum ul li{
+		margin: 7px;
+		margin-left: -15px;
+	}
+	.schedule-card .schedule-description .schedule-description-event {
+		width: 100%;
+		margin-left: 10px;
+	}
+	.insidebox { 
+		width: 210px;
+		flex-flow: row wrap;
+		gap: 10px 5px;
+		justify-content: space-between;
+		text-align: center;
+		margin-left: -15px;
+	}
+	#break .insidebox {
+		display:flex;
+		flex-flow: row nowrap;
+	}
+	#break .insidebox span {
+		margin-left: -10px;
+	}
 }
 
 /* Small Tablets */
@@ -726,6 +930,7 @@ nav ul li {
     top: 45px;
     left: -22px;
     transition: all 0.3s ease-in;
+	margin-left: -10px;
 }
 .schedule-card:hover:after {
     background: #8a56d1;
@@ -779,11 +984,11 @@ nav ul li {
 }
 .insidebox { 
     width: 250px;
-    padding: 10px 20px;
-    color: #6164B2;
 	flex-flow: row wrap;
 	gap: 10px 5px;
 	justify-content: space-between;
+	text-align: center;
+	margin-left: -10px;
 }
 }
 

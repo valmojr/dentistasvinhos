@@ -74,8 +74,8 @@ class App extends Component {
   render () {
   return (
   <div className="container">
-    <section className="hero" id="hero">
-      <div className="hero_header">
+    <section className="hero">
+      <div className="hero_header" id='title'>
       <h2>MEETING</h2>
       <h1>ODONTOLOGIA ESTÉTICA</h1>
       <h2>NO VALE DOS VINHEDOS</h2>
@@ -103,7 +103,7 @@ class App extends Component {
       </div>
       <div className="thumbnail">
         <img src={pizzolotto} alt="" className='faces'/>
-        <h1 className="stats">Lucas Pizzolato</h1>
+        <h1 className="stats">Lucas Pizzolo</h1>
         <h4>Professor de Dentística</h4>
         <p>Resinas indiretas posteriores</p>
       </div>
@@ -160,8 +160,6 @@ class App extends Component {
                     <ul>
                       <li>Mestre e Doutora em Dentística (UFSC)</li>
                       <li>Professora de Especialização em Dentística e Prótese (UNISOCIESC)</li>
-                      <li>Pós-graduação em Estética Dental (UNIAVAN)</li>
-                      <li>Pós-graduação em Dentística (ABO)</li>
                     </ul>
                   </div>
                   <div className='schedule-description-event'>
@@ -183,16 +181,14 @@ class App extends Component {
                 </div>
                 {this.state.showPedroAlexandre && <div className='schedule-description'>
                   <div className='schedule-decription-curriculum'>
-                    <h3>Prof. Alana Pereira</h3>
+                    <h3>Prof. Pedro Alexandre</h3>
                     <ul>
-                      <li>Mestre e Doutora em Dentística (UFSC)</li>
-                      <li>Professora de Especialização em Dentística e Prótese (UNISOCIESC)</li>
-                      <li>Pós-graduação em Estética Dental (UNIAVAN)</li>
-                      <li>Pós-graduação em Dentística (ABO)</li>
+                      <li>Especialização em Dentística (UFSC)</li>
+                      <li>Professor de cursos de especialização em Dentística (IOA-BC, IOA-Criciúma, IOE-Lages)</li>
                     </ul>
                   </div>
                   <div className='schedule-description-event'>
-                    <p>Irá ministrar palestra acerca de dentística, com ênfase em harmonização ortofacial.</p>
+                    <p>Encontro visando capacitar o cirurgião-dentista a realizar e indicar restaurações diretas e semi diretas</p>
                   </div>
                 </div>}
               </div>
@@ -210,16 +206,14 @@ class App extends Component {
                 </div>
                 {this.state.showUbaldo && <div className='schedule-description'>
                   <div className='schedule-decription-curriculum'>
-                    <h3>Prof. Alana Pereira</h3>
+                    <h3>Prof. Leonardo Ubaldo</h3>
                     <ul>
-                      <li>Mestre e Doutora em Dentística (UFSC)</li>
-                      <li>Professora de Especialização em Dentística e Prótese (UNISOCIESC)</li>
-                      <li>Pós-graduação em Estética Dental (UNIAVAN)</li>
-                      <li>Pós-graduação em Dentística (ABO)</li>
+                      <li>Mestre em Odontologia (PUC-MG)</li>
+                      <li>Professor e Coordenador de cursos de Aperfeiçoamento em Dentistica</li>
                     </ul>
                   </div>
                   <div className='schedule-description-event'>
-                    <p>Irá ministrar palestra acerca de dentística, com ênfase em harmonização ortofacial.</p>
+                    <p>Palestra sobre a análise de resistência das paredes radiculares de dentes com rizogênse incompleta, com apecificação e restauração utilizando resinas compostas.</p>
                   </div>
                 </div>}
               </div>
@@ -231,16 +225,14 @@ class App extends Component {
                 </div>
                 {this.state.showPizzolato && <div className='schedule-description'>
                   <div className='schedule-decription-curriculum'>
-                    <h3>Prof. Alana Pereira</h3>
+                    <h3>Prof. Lucas Pizzolo</h3>
                     <ul>
-                      <li>Mestre e Doutora em Dentística (UFSC)</li>
-                      <li>Professora de Especialização em Dentística e Prótese (UNISOCIESC)</li>
-                      <li>Pós-graduação em Estética Dental (UNIAVAN)</li>
-                      <li>Pós-graduação em Dentística (ABO)</li>
+                      <li>Mestre e especialista em Dentística (UNG)</li>
+                      <li>Doutorando em Materiais Dentários (UFRGS)</li>
                     </ul>
                   </div>
                   <div className='schedule-description-event'>
-                    <p>Irá ministrar palestra acerca de dentística, com ênfase em harmonização ortofacial.</p>
+                    <p>Irá ministrar palestra abordando as restaurações indiretas com a utilização de resinas compostas.</p>
                   </div>
                 </div>}
               </div>
@@ -255,16 +247,13 @@ class App extends Component {
                 </div>
                 {this.state.showLuisFelipe && <div className='schedule-description'>
                   <div className='schedule-decription-curriculum'>
-                    <h3>Prof. Alana Pereira</h3>
+                    <h3>Prof. Luis Felipe</h3>
                     <ul>
-                      <li>Mestre e Doutora em Dentística (UFSC)</li>
-                      <li>Professora de Especialização em Dentística e Prótese (UNISOCIESC)</li>
-                      <li>Pós-graduação em Estética Dental (UNIAVAN)</li>
-                      <li>Pós-graduação em Dentística (ABO)</li>
+                      <li>Professor de Dentística em cursos de pós-graduação</li>
                     </ul>
                   </div>
                   <div className='schedule-description-event'>
-                    <p>Irá ministrar palestra acerca de dentística, com ênfase em harmonização ortofacial.</p>
+                    <p>Palestra acerca de reabilitação estética e oclusal com resinas</p>
                   </div>
                 </div>}
               </div>
@@ -282,18 +271,22 @@ class App extends Component {
                 </div>
                 {this.state.showHermann && <div className='schedule-description'>
                   <div className='schedule-decription-curriculum'>
-                    <h3>Prof. Alana Pereira</h3>
+                    <h3>Prof. Fabio Hermann</h3>
                     <ul>
-                      <li>Mestre e Doutora em Dentística (UFSC)</li>
-                      <li>Professora de Especialização em Dentística e Prótese (UNISOCIESC)</li>
-                      <li>Pós-graduação em Estética Dental (UNIAVAN)</li>
-                      <li>Pós-graduação em Dentística (ABO)</li>
+                      <li>PhD em Dentística (UFPel)</li>
+                      <li>Professor de Dentística (UFRGS)</li>
                     </ul>
                   </div>
                   <div className='schedule-description-event'>
-                    <p>Irá ministrar palestra acerca de dentística, com ênfase em harmonização ortofacial.</p>
+                    <p>Irá ministrar palestra acerca de facetas laminadas, resinas compostas e cerâmicas, lentes de contato, abordando suas técnicas de preparo e análise estética.</p>
                   </div>
                 </div>}
+              </div>
+              <div className='schedule-card' id='break'>
+                <div className='insidebox'>
+                <div className='schedule-tag'><p>13:30</p></div>
+                <span>Almoço</span>
+                </div>
               </div>
             <div className='schedule-card' onClick={this.toggleChain}>
               <div className='insidebox'>
@@ -303,16 +296,14 @@ class App extends Component {
                 </div>
                 {this.state.showChain && <div className='schedule-description'>
                   <div className='schedule-decription-curriculum'>
-                    <h3>Prof. Alana Pereira</h3>
+                    <h3>Prof. Marcelo Chaim</h3>
                     <ul>
-                      <li>Mestre e Doutora em Dentística (UFSC)</li>
-                      <li>Professora de Especialização em Dentística e Prótese (UNISOCIESC)</li>
-                      <li>Pós-graduação em Estética Dental (UNIAVAN)</li>
-                      <li>Pós-graduação em Dentística (ABO)</li>
+                      <li>PhD em Biomateriais (Alabama Univ. - EUA)</li>
+                      <li>Autor, professor e pesquisador em Dentística</li>
                     </ul>
                   </div>
                   <div className='schedule-description-event'>
-                    <p>Irá ministrar palestra acerca de dentística, com ênfase em harmonização ortofacial.</p>
+                    <p>Irá ministrar palestra acerca de pinos radiculares e restauração</p>
                   </div>
                 </div>}
               </div>
